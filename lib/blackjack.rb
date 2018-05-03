@@ -26,8 +26,7 @@ end
 
 def initial_round
   sum1 = deal_card + deal_card
-  msg = "Your cards add up to #{sum1}"
-  return msg
+  return sum1
 end
 
 def hit?

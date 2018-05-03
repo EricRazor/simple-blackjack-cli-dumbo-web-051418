@@ -27,14 +27,15 @@ def end_game(total)
 end
 
 def initial_round
-  sum1 = deal_card + deal_card
-  display_card_total(sum1)
+  twocards = deal_card + deal_card
+  display_card_total(twocards)
 end
 
 def hit?(total)
   prompt_user
   if get_user_input == "h"
     total += deal_card
+    puts "New total: #{total}"
   end
   return total
 end

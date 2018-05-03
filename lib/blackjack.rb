@@ -35,7 +35,7 @@ def hit?(total)
   prompt_user
   if get_user_input == "h"
     total += deal_card
-    puts "New total: #{total}"
+    puts "Your cards add up to #{total}"
   end
   return total
 end

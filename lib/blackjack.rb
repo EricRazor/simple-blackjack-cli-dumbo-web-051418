@@ -41,6 +41,8 @@ end
 
 def invalid_command
   puts "Please enter a valid command."
+  sleep 1
+  prompt_user
 end
 
 #####################################################

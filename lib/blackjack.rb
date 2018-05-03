@@ -51,7 +51,7 @@ end
 def runner
   welcome
   total = initial_round
-  unless total == 21 do
+  while total < 21 do
     total = hit?(total)
     total = display_card_total(total)
   end
